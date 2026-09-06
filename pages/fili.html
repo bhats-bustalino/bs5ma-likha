@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="tl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Isang interaktibong digital exhibit tungkol sa El Filibusterismo ni José Rizal."
+    />
+
+    <title>El Filibusterismo | Panitikan, Lipunan, at Pakikibaka</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/bumalik.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/fili.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <header class="site-header" id="tahanan">
+      <nav class="navbar">
+        <!-- Home Button -->
+        <a href="../index.html#projects" class="home-button">
+          <i class="fas fa-home"></i>
+          Bumalik sa Tahanan
+          <style>
+            .home-button {
+              position: fixed;
+              top: 15px;
+              left: 20px;
+              z-index: 101;
+            }
+          </style>
+        </a>
+        <a href="#tahanan" class="brand">
+          <span>EL FILIBUSTERISMO</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Buksan ang menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="mainNav">
+          <li><a href="#tungkol">Tungkol</a></li>
+          <li><a href="#buod">Buod</a></li>
+          <li><a href="#tauhan">Mga Tauhan</a></li>
+          <li><a href="#tema">Mga Tema</a></li>
+          <li><a href="#kabanata">Kabanata</a></li>
+          <li><a href="#kasaysayan">Kasaysayan</a></li>
+          <li><a href="#kahalagahan">Kahalagahan</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#sanggunian">Sanggunian</a></li>
+        </ul>
+      </nav>
+
+      <!-- =========================
+             HERO
+        ========================== -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">PANITIKAN • LIPUNAN • PAKIKIBAKA</p>
+
+          <h1>
+            EL
+            <span>FILIBUSTERISMO</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            “Isang nobela tungkol sa kapangyarihan, paghihiganti, edukasyon, at
+            pakikibaka para sa pagbabago.”
+          </p>
+
+          <div class="author">
+            <span></span>
+            <strong>José Rizal</strong>
+            <span>1891</span>
+          </div>
+
+          <p class="hero-description">
+            Ang <em>El Filibusterismo</em> ay karugtong ng
+            <em>Noli Me Tangere</em>. Sa pagbabalik ni Crisóstomo Ibarra bilang
+            Simoun, inilalahad ng nobela ang mas madilim na larawan ng
+            kapangyarihan, edukasyon, paghihiganti at pagbabago.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#buod" class="btn btn-primary"> Tuklasin ang Nobela </a>
+
+            <a href="#tauhan" class="btn btn-outline">
+              Kilalanin ang mga Tauhan
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-year">1891</div>
+      </section>
+    </header>
+
+    <main>
+      <!-- =========================
+             TUNGKOL SA NOBELA
+        ========================== -->
+
+      <section class="section" id="tungkol">
+        <div class="section-heading">
+          <span class="section-label"> TUNGKOL SA NOBELA </span>
+
+          <h2>Mula sa reporma tungo sa mas madilim na tanong</h2>
+
+          <p>
+            Kilalanin ang may-akda, ang nobela, at ang kontekstong panlipunan
+            nito.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="info-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="3.2" />
+                <path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" />
+              </svg>
+            </span>
+            <h3>Sino si José Rizal?</h3>
+
+            <p>
+              Si José Rizal ay ang may-akda ng
+              <em>Noli Me Tangere</em> at <em>El Filibusterismo</em>. Sa
+              kaniyang mga akda, ginamit niya ang panitikan upang ilarawan at
+              suriin ang mga suliranin ng lipunang kolonyal.
+            </p>
+          </article>
+
+          <article class="info-card blue">
+            <span class="info-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 5.5C4.5 4.6 6.7 4 9 4c1.4 0 2.7.2 3.8.6" />
+                <path d="M21 5.5C19.5 4.6 17.3 4 15 4c-1.4 0-2.7.2-3.8.6" />
+                <path d="M3 5.5v13c1.5-.9 3.7-1.5 6-1.5 1.4 0 2.7.2 3.8.6" />
+                <path d="M21 5.5v13c-1.5-.9-3.7-1.5-6-1.5-1.4 0-2.7.2-3.8.6" />
+                <path d="M12.2 6.1v13" />
+              </svg>
+            </span>
+            <h3>Ano ang El Filibusterismo?</h3>
+
+            <p>
+              Ito ang karugtong ng
+              <em>Noli Me Tangere</em>. Ang dating Crisóstomo Ibarra ay nagbalik
+              bilang Simoun, isang mayamang alahero na may planong paghihiganti.
+            </p>
+          </article>
+
+          <article class="info-card yellow">
+            <span class="info-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3.5" y="5" width="17" height="15" rx="2" />
+                <path d="M8 3v4M16 3v4M3.5 9.5h17" />
+                <path d="M8 13h2M8 16.5h2M14 13h2M14 16.5h2" />
+              </svg>
+            </span>
+            <h3>Kailan ito nailathala?</h3>
+
+            <p>
+              Ang orihinal na edisyong Espanyol ay unang nailathala noong
+              <strong>1891</strong>.
+            </p>
+          </article>
+
+          <article class="info-card red">
+            <span class="info-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v16" />
+                <path d="M6 21h12" />
+                <path d="M4 7h6M14 7h6" />
+                <path d="M4 7l-2.5 5a2.7 2.7 0 0 0 5 0L4 7Z" />
+                <path d="M20 7l-2.5 5a2.7 2.7 0 0 0 5 0L20 7Z" />
+              </svg>
+            </span>
+            <h3>Anong lipunan ang inilalarawan?</h3>
+
+            <p>
+              Inilalahad ng nobela ang mga suliranin tungkol sa kapangyarihan,
+              edukasyon, pamahalaan, relihiyon, kayamanan at pagbabago sa
+              lipunan.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             BUOD
+        ========================== -->
+
+      <section class="section beige" id="buod">
+        <div class="section-heading centered">
+          <span class="section-label"> BUOD </span>
+
+          <h2>Ang kuwento ng El Filibusterismo</h2>
+
+          <p>Isang maikling timeline ng mahahalagang pangyayari sa nobela.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-number">01</div>
+
+            <div>
+              <h3>Pagbabalik ni Ibarra bilang Simoun</h3>
+
+              <p>
+                Nagbalik si Crisóstomo Ibarra sa ibang pangalan at anyo bilang
+                Simoun. Malapit siya sa mga makapangyarihang tao sa lipunan.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-number">02</div>
+
+            <div>
+              <h3>Paghihiganti</h3>
+
+              <p>
+                Ang dating hangarin sa reporma ay napalitan ng mas radikal na
+                pagnanais na gumanti at pabagsakin ang umiiral na kaayusan.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-number">03</div>
+
+            <div>
+              <h3>Pakikibaka ng mga estudyante</h3>
+
+              <p>
+                Nakatuon ang isang mahalagang bahagi ng nobela sa mga
+                estudyanteng nagsusulong ng akademya ng wikang Kastila.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-number">04</div>
+
+            <div>
+              <h3>Mga suliranin ng lipunan</h3>
+
+              <p>
+                Ipinakikita sa iba't ibang tauhan ang epekto ng pang-aabuso,
+                kahirapan, kawalan ng katarungan at maling paggamit ng
+                kapangyarihan.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-number">05</div>
+
+            <div>
+              <h3>Mga plano ni Simoun</h3>
+
+              <p>
+                Unti-unting lumilitaw ang kaniyang mapanganib na plano upang
+                lumikha ng malaking kaguluhan.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-number">06</div>
+
+            <div>
+              <h3>Wakas at aral</h3>
+
+              <p>
+                Nabigo ang kaniyang plano. Sa huli, hinaharap ng nobela ang mga
+                tanong tungkol sa paghihiganti, pananagutan at tunay na
+                pagbabago.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             MGA TAUHAN
+        ========================== -->
+
+      <section class="section" id="tauhan">
+        <div class="section-heading">
+          <span class="section-label"> MGA TAUHAN </span>
+
+          <h2>Mga mukha sa likod ng tunggalian</h2>
+
+          <p>I-click ang isang tauhan upang makita ang kaniyang impormasyon.</p>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="search"
+            id="characterSearch"
+            placeholder="Maghanap ng tauhan..."
+          />
+        </div>
+
+        <div class="character-grid" id="characterGrid"></div>
+      </section>
+
+      <!-- =========================
+             MGA TEMA
+        ========================== -->
+
+      <section class="section" id="tema">
+        <div class="section-heading centered">
+          <span class="section-label"> MGA TEMA </span>
+
+          <h2>Mga tanong na hindi natatapos sa huling pahina</h2>
+        </div>
+
+        <div class="theme-grid">
+          <article class="theme-card">
+            <span class="theme-icon red">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 18h16" />
+                <path d="M4 18l-1.2-9L8 12l4-6 4 6 5.2-3-1.2 9Z" />
+              </svg>
+            </span>
+            <span class="theme-number">01</span>
+            <h3>Pang-aabuso sa Kapangyarihan</h3>
+            <p>
+              Inilalarawan ang paggamit ng awtoridad sa paraang nakapipinsala sa
+              iba.
+            </p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon yellow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <ellipse cx="12" cy="7" rx="7" ry="3" />
+                <path d="M5 7v4c0 1.66 3.13 3 7 3s7-1.34 7-3V7" />
+                <path d="M5 11v4c0 1.66 3.13 3 7 3s7-1.34 7-3v-4" />
+              </svg>
+            </span>
+            <span class="theme-number">02</span>
+            <h3>Korupsiyon</h3>
+            <p>
+              Sinusuri ang pansariling interes at maling paggamit ng posisyon.
+            </p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon blue">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 9.5 12 5l10 4.5-10 4.5-10-4.5Z" />
+                <path
+                  d="M6.5 11.5v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5v-4"
+                />
+              </svg>
+            </span>
+            <span class="theme-number">03</span>
+            <h3>Edukasyon</h3>
+            <p>
+              Ipinakikita ang kahalagahan ng edukasyon at mga hadlang sa
+              reporma.
+            </p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon red">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 16h16l-2 4H6l-2-4Z" />
+                <path d="M12 16V3" />
+                <path d="M12 4l6 5-6 2V4Z" />
+                <path d="M12 8 7 10l5 1V8Z" />
+              </svg>
+            </span>
+            <span class="theme-number">04</span>
+            <h3>Kolonyalismo</h3>
+            <p>Ipinakikita ang epekto ng kolonyal na sistema sa lipunan.</p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon yellow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2v13" />
+                <path d="M8 6h8" />
+                <path d="M9.5 15h5l-1 3.5a1.7 1.7 0 0 1-3 0L9.5 15Z" />
+                <path d="M12 18.5V22" />
+              </svg>
+            </span>
+            <span class="theme-number">05</span>
+            <h3>Paghihiganti</h3>
+            <p>
+              Sinusuri ang mga bunga ng paghihiganti sa mga desisyon ni Simoun.
+            </p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon blue">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M7 10.3V7a1.3 1.3 0 0 1 2.6 0v2.6" />
+                <path d="M9.6 9.6V6.3a1.3 1.3 0 0 1 2.6 0V9.6" />
+                <path d="M12.2 9.6V6.8a1.3 1.3 0 0 1 2.6 0v3" />
+                <path
+                  d="M14.8 10.6V8.6a1.3 1.3 0 0 1 2.6 0V13c0 3.6-2.3 6-6 6-2.3 0-3.7-1-5-2.6l-2.1-2.8a1.3 1.3 0 0 1 2-1.6L7 13"
+                />
+              </svg>
+            </span>
+            <span class="theme-number">06</span>
+            <h3>Rebolusyon at Pagbabago</h3>
+            <p>
+              Tinatanong ng nobela kung ang marahas na pagkilos ba ay tunay na
+              makapagdudulot ng pagbabago.
+            </p>
+          </article>
+
+          <article class="theme-card">
+            <span class="theme-icon red">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 15c2.5-4 6-6.5 9-6.5S18 12 21 9c-1 4-4 7-9 7-2 0-4.5-.5-6-2"
+                />
+                <path d="M9 16c0 2 1.5 3.5 3.5 3.5" />
+              </svg>
+            </span>
+            <span class="theme-number">07</span>
+            <h3>Kalayaan</h3>
+            <p>Tumutukoy sa paghahangad ng personal at pambansang kalayaan.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             KABANATA
+        ========================== -->
+
+      <section class="section beige" id="kabanata">
+        <div class="section-heading">
+          <span class="section-label"> KABANATA </span>
+
+          <h2>Maghanap sa mga Kabanata</h2>
+
+          <p>Maikling gabay sa mga kabanata ng nobela.</p>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="search"
+            id="chapterSearch"
+            placeholder="Hanapin ang kabanata..."
+          />
+        </div>
+
+        <div class="chapter-grid" id="chapterGrid"></div>
+      </section>
+
+      <!-- =========================
+             KASAYSAYAN
+        ========================== -->
+
+      <section class="section" id="kasaysayan">
+        <div class="section-heading centered">
+          <span class="section-label"> KASAYSAYAN </span>
+
+          <h2>Ang nobela sa agos ng kasaysayan</h2>
+        </div>
+
+        <div class="history-timeline">
+          <article class="history-item">
+            <div class="history-year">1872</div>
+
+            <div>
+              <h3>Pagbitay kina GomBurZa</h3>
+
+              <p>
+                Sina Mariano Gomez, José Burgos at Jacinto Zamora ay binitay
+                noong 17 Pebrero 1872.
+              </p>
+
+              <a
+                href="https://philhistoricsites.nhcp.gov.ph/registry_database/gomburza-execution-site/"
+                target="_blank"
+              >
+                Sanggunian: NHCP →
+              </a>
+            </div>
+          </article>
+
+          <article class="history-item">
+            <div class="history-year">1887</div>
+
+            <div>
+              <h3>Noli Me Tangere</h3>
+
+              <p>
+                Ang <em>El Filibusterismo</em> ay karugtong ng daigdig na
+                ipinakilala sa <em>Noli Me Tangere</em>.
+              </p>
+            </div>
+          </article>
+
+          <article class="history-item">
+            <div class="history-year">1891</div>
+
+            <div>
+              <h3>Paglalathala ng El Filibusterismo</h3>
+
+              <p>
+                Unang nailathala ang orihinal na edisyong Espanyol noong 1891.
+              </p>
+
+              <a href="https://www.gutenberg.org/ebooks/30903" target="_blank">
+                Project Gutenberg →
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             KAHALAGAHAN
+        ========================== -->
+
+      <section class="section beige" id="kahalagahan">
+        <div class="reflection-box">
+          <span class="section-label">
+            EL FILI AT LIPUNANG PILIPINO NGAYON
+          </span>
+
+          <h2>Basahin ang nobela, pagkatapos ay tanungin ang kasalukuyan.</h2>
+
+          <p>
+            Gamitin ang mga tanong na ito para sa sariling pagsusuri at
+            talakayan.
+          </p>
+
+          <div class="reflection-list">
+            <button class="reflection-question">
+              May mga suliranin ba sa nobela na makikita pa rin sa kasalukuyan?
+              <span>+</span>
+            </button>
+
+            <div class="reflection-answer">
+              Anong pagkakatulad o pagkakaiba ang mapatutunayan mo?
+            </div>
+
+            <button class="reflection-question">
+              Ano ang kahalagahan ng edukasyon?
+              <span>+</span>
+            </button>
+
+            <div class="reflection-answer">
+              Isaalang-alang ang karanasan ng mga estudyante sa nobela.
+            </div>
+
+            <button class="reflection-question">
+              Kailan nagiging mapanganib ang paghihiganti?
+              <span>+</span>
+            </button>
+
+            <div class="reflection-answer">
+              Suriin kung paano nakaapekto ang paghihiganti sa mga desisyon ni
+              Simoun.
+            </div>
+
+            <button class="reflection-question">
+              Paano makatutulong ang kabataan sa lipunan?
+              <span>+</span>
+            </button>
+
+            <div class="reflection-answer">
+              Pag-isipan ang papel ng kaalaman, pakikilahok at kritikal na
+              pag-iisip.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             QUIZ
+        ========================== -->
+
+      <section class="section" id="quiz">
+        <div class="section-heading centered">
+          <span class="section-label"> INTERAKTIBONG QUIZ </span>
+
+          <h2>Subukin ang iyong pag-unawa</h2>
+
+          <p>12 tanong tungkol sa nobela, tauhan at tema.</p>
+        </div>
+
+        <div class="quiz-container">
+          <div class="quiz-progress">
+            <span id="quizProgress"></span>
+          </div>
+
+          <div id="quizContent"></div>
+
+          <div class="quiz-actions">
+            <button class="btn btn-outline" id="quizPrevious">Bumalik</button>
+
+            <button class="btn btn-primary" id="quizNext">Susunod</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SANGGUNIAN
+        ========================== -->
+
+      <section class="section beige" id="sanggunian">
+        <div class="section-heading">
+          <span class="section-label"> MGA SANGGUNIAN </span>
+
+          <h2>Mga Mapagkakatiwalaang Sanggunian</h2>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-card">
+            <span class="source-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"
+                />
+              </svg>
+            </span>
+
+            <span>TEKSTONG PAMPANITIKAN</span>
+
+            <h3>El Filibusterismo</h3>
+
+            <p>José Rizal • 1891</p>
+
+            <p>Digital na edisyon ng Project Gutenberg.</p>
+
+            <a href="https://www.gutenberg.org/ebooks/30903" target="_blank">
+              Buksan ang Project Gutenberg →
+            </a>
+          </article>
+
+          <article class="source-card">
+            <span class="source-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9.5" />
+                <path d="M2.5 12h19" />
+                <path
+                  d="M12 2.5c2.5 2.7 3.8 6.1 3.8 9.5s-1.3 6.8-3.8 9.5c-2.5-2.7-3.8-6.1-3.8-9.5S9.5 5.2 12 2.5Z"
+                />
+              </svg>
+            </span>
+
+            <span>SALING TAGALOG</span>
+
+            <h3>Ang “Filibusterismo”</h3>
+
+            <p>Salin ni Patricio Mariano.</p>
+
+            <a href="https://www.gutenberg.org/ebooks/47629" target="_blank">
+              Buksan ang edisyon →
+            </a>
+          </article>
+
+          <article class="source-card">
+            <span class="source-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21h18" />
+                <path d="M4 21V10l8-6 8 6v11" />
+                <path d="M9 21v-6h6v6" />
+              </svg>
+            </span>
+
+            <span>KASAYSAYAN</span>
+
+            <h3>GOMBURZA Execution Site</h3>
+
+            <p>National Historical Commission of the Philippines.</p>
+
+            <a
+              href="https://philhistoricsites.nhcp.gov.ph/registry_database/gomburza-execution-site/"
+              target="_blank"
+            >
+              Buksan ang NHCP →
+            </a>
+          </article>
+
+          <article class="source-card">
+            <span class="source-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="5" rx="1.2" />
+                <path
+                  d="M5 8v11a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19V8"
+                />
+                <path d="M10 12h4" />
+              </svg>
+            </span>
+
+            <span>PAMBANSANG KOLEKSIYON</span>
+
+            <h3>El Filibusterismo por Rizal</h3>
+
+            <p>National Historical Commission of the Philippines.</p>
+
+            <a
+              href="https://memory.nhcp.gov.ph/collection-view/?id=10774"
+              target="_blank"
+            >
+              Tingnan ang tala →
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+      <div>
+        <h2>EL FILIBUSTERISMO</h2>
+
+        <p>
+          Ang website na ito ay isang proyektong pang-edukasyon tungkol sa
+          <em>El Filibusterismo</em> ni José Rizal.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#sanggunian"> Mga Sanggunian </a>
+
+        <a href="#tungkol"> Tungkol sa Proyekto </a>
+
+        <a href="#tahanan"> Bumalik sa Itaas ↑ </a>
+      </div>
+
+      <div class="copyright">
+        © 2026 Digital Exhibit • Mga tekstong pampublikong dominio ay naka-link
+        sa mga lehitimong digital na edisyon.
+      </div>
+    </footer>
+
+    <!-- =========================
+         CHARACTER MODAL
+    ========================== -->
+
+    <dialog id="characterModal">
+      <button id="closeModal" class="close-modal" aria-label="Isara">×</button>
+
+      <span class="section-label"> MGA TAUHAN </span>
+
+      <h2 id="modalName"></h2>
+
+      <p id="modalRole" class="modal-role"></p>
+
+      <div id="modalDetails" class="modal-details"></div>
+    </dialog>
+
+    <button id="backToTop" class="back-to-top" aria-label="Bumalik sa itaas">
+      ↑
+    </button>
+
+    <script src="../js/fili.js"></script>
+  </body>
+</html>

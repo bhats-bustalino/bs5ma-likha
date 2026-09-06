@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="adarnaTitle">
+  <title id="adarnaTitle">Ibong Adarna</title>
+  <ellipse cx="120" cy="168" rx="52" ry="8" fill="#0038A8" opacity="0.18"/>
+  <path fill="#CE1126" d="M148 78c28-6 52 8 64 28-22-4-40 2-52 16-8-18-8-32-12-44z"/>
+  <path fill="#FCD116" d="M42 92c-18 22-28 46-22 62 24-20 46-28 68-28-10-14-26-26-46-34z"/>
+  <path fill="#0038A8" d="M78 70c18-32 52-44 86-28 22 10 34 32 36 54-18-8-38-8-58-2-8 22-28 36-52 40-18-18-20-42-12-64z"/>
+  <path fill="#FCD116" d="M92 78c8-16 26-24 44-18 4 14-2 28-14 36-12-4-24-8-30-18z"/>
+  <circle cx="128" cy="72" r="5" fill="#FFFFFF"/>
+  <circle cx="129.5" cy="72" r="2.4" fill="#0038A8"/>
+  <path fill="#FCD116" d="M154 70l22-6-18 14z"/>
+  <path fill="#CE1126" d="M96 118c16 10 34 14 54 10-8 16-28 28-50 28-10-12-10-24-4-38z"/>
+</svg>

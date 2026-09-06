@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mga Tauhan | Ibong Adarna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/adarna.css">
+</head>
+<body>
+  <div class="band" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="tatak" href="index.html">
+        <img src="../../images/adarna.svg" alt="">
+        <span>
+          <strong>Ibong Adarna</strong>
+          <small>Buwan ng Wika</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="pangunahing-nav">Talaan</button>
+      <nav id="pangunahing-nav" aria-label="Pangunahing talaan">
+        <ul class="nav-list">
+          <li><a href="index.html">Unang Pahina</a></li>
+          <li><a href="tungkol.html">Tungkol</a></li>
+          <li><a href="kabanata.html">Mga Kabanata</a></li>
+          <li><a href="tauhan.html" aria-current="page">Mga Tauhan</a></li>
+          <li><a href="lugar.html">Mga Lugar</a></li>
+          <li><a href="aral.html">Mga Aral</a></li>
+          <li><a href="pagsusulit.html">Pagsusulit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="pahina-ulo">
+    <div class="pahina-ulo-inner">
+      <span class="kicker">Talaan ng karakter</span>
+      <h1>Mga tauhan sa Ibong Adarna</h1>
+      <p>Batay sa talaan ng mga karakter at sa kanilang gampanin, mahahalagang gawa, at ugnayan sa kuwento.</p>
+    </div>
+  </header>
+
+  <main class="balot">
+    <div class="pagsala" role="group" aria-label="Salain ang tauhan">
+      <button type="button" data-sala="lahat" aria-pressed="true">Lahat</button>
+      <button type="button" data-sala="maharlika" aria-pressed="false">Maharlika</button>
+      <button type="button" data-sala="katulong" aria-pressed="false">Katulong</button>
+      <button type="button" data-sala="kaaway" aria-pressed="false">Kaaway</button>
+      <button type="button" data-sala="hayop" aria-pressed="false">Hayop at ibon</button>
+    </div>
+
+    <div class="grid tatlo">
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda asul">Maharlika</span>
+        <h3>Haring Fernando</h3>
+        <p><strong>Gampanin:</strong> Hari ng Berbanya.</p>
+        <p>Napanaginipan niya ang dalawang traydor laban kay Don Juan. Nagkasakit siya; ang awit ng Adarna ang tanging lunas.</p>
+        <p><em>Asawa ni Reyna Valeriana; ama nina Pedro, Diego, at Juan.</em></p>
+      </article>
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda asul">Maharlika</span>
+        <h3>Reyna Valeriana</h3>
+        <p><strong>Gampanin:</strong> Reyna ng Berbanya.</p>
+        <p>Ina ng tatlong prinsipe. Kinikilala siyang mabait at maganda. Asawa ni Haring Fernando.</p>
+      </article>
+      <article class="kard tauhan pula-gilid" data-uri="maharlika">
+        <span class="tanda pula">Prinsipe</span>
+        <h3>Don Pedro</h3>
+        <p><strong>Gampanin:</strong> Panganay. Pinakamalakas ang pangangatawan at kaaya-aya ang postura.</p>
+        <p>Unang hinanap ang Adarna ngunit naging bato. Kalaunan ay nagtaksil dahil sa selos: pinutol ang lubid at iniwan si Juan sa balon. Naging asawa ni Donya Leonora.</p>
+      </article>
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda">Prinsipe</span>
+        <h3>Don Diego</h3>
+        <p><strong>Gampanin:</strong> Pangalawang anak. Pinakatahimik; madalas sumunod kay Pedro.</p>
+        <p>Ikalawang naging bato. Kasama ni Pedro sa paghahampas at pag-iwan kay Juan. Naging asawa ni Donya Juana.</p>
+      </article>
+      <article class="kard tauhan dilaw-gilid" data-uri="maharlika">
+        <span class="tanda">Bayani</span>
+        <h3>Don Juan</h3>
+        <p><strong>Gampanin:</strong> Bunso at paborito dahil puno ng kabaitan. Mahal na mahal niya ang magkapatid.</p>
+        <p>Nakahuli sa Adarna, binuhay ang magkapatid, iniligtas sina Juana at Leonora, nagmahal kay Maria Blanca, tinapos ang pagsubok ni Salermo, at humingi ng tawad nang maalala ang pag-ibig.</p>
+      </article>
+      <article class="kard tauhan dilaw-gilid" data-uri="hayop">
+        <span class="tanda">Mahiwaga</span>
+        <h3>Ibong Adarna</h3>
+        <p><strong>Gampanin:</strong> Ibon ng lunas at panganib.</p>
+        <p>Nakapagpapatulog ang himig; nakapagpapabato ang dumi sa natutulog. Dumadapo sa Piedras Platas. Si Don Juan ang nagturing nitong may-ari matapos mahuli.</p>
+      </article>
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda asul">Prinsesa</span>
+        <h3>Donya Juana</h3>
+        <p>Unang natagpuan ni Juan sa mahiwagang balon. Binantayan ng higante. Unang naging mahal ni Don Juan sa yugtong iyon. Kalaunan ay naging asawa ni Don Diego.</p>
+      </article>
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda asul">Prinsesa</span>
+        <h3>Donya Leonora</h3>
+        <p>Binantayan ng serpyenteng may pitong ulo. Iniwan ang mahiwagang singsing na tumulong kay Juan sa pamamagitan ng lobo. Pinaboran muna ng arsobispo. Naging asawa ni Don Pedro.</p>
+      </article>
+      <article class="kard tauhan dilaw-gilid" data-uri="maharlika">
+        <span class="tanda">Prinsesa</span>
+        <h3>Donya Maria Blanca</h3>
+        <p>Prinsesa ng Reyno de los Cristales. Gumagamit ng puting mahika. Tinukoy ng Adarna kay Juan. Anak ni Haring Salermo. Tumulong sa mga pagsubok, tumakas kasama si Juan, at sa wakas ay naging asawa nito.</p>
+      </article>
+      <article class="kard tauhan pula-gilid" data-uri="kaaway">
+        <span class="tanda pula">Hari</span>
+        <h3>Haring Salermo</h3>
+        <p>Hari ng Reyno de los Cristales. Itim ang kanyang mahika. Ayaw sa pag-iibigan nina Maria at Juan. Naglagay ng napakahirap na pagsubok at hinabol sila nang tumakas.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda asul">Simbahan</span>
+        <h3>Arsobispo ng Berbanya</h3>
+        <p>Kasunod ng hari sa bigat ng desisyon. Sa pagtatalo nina Maria Blanca at Leonora, pinaboran muna niya si Leonora dahil sa nauna nitong karapatan. Sa wakas, sina Maria at Juan pa rin ang ikinasal.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda">Gabay</span>
+        <h3>Matandang ermitanyo</h3>
+        <p>Nakatira sa kabundukan. Nagbigay kay Juan ng kutsilyo, maasim na prutas, gintong panali, at aral kung paano labanan ang pitong himig at buhayin ang magkapatid.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda">Gabay</span>
+        <h3>Ikalawang ermitanyo</h3>
+        <p>Isang ermitanyo sa paghahanap ng daan patungong Reyno de los Cristales. Hindi niya tuwirang naibigay ang buong kaalaman, ngunit naging gabay sa biyahe.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda">Gabay</span>
+        <h3>Ikatlong ermitanyo</h3>
+        <p>May mahabang balbas. Sumangguni sa mga hayop. Sa kanya napatungo si Juan sa agila, ang nakaaalam ng daan sa Delos Cristales.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda">Gabay</span>
+        <h3>Leproso</h3>
+        <p>Tumulong kay Don Juan papunta sa Piedras Platas. Binigyan siya ni Juan ng pagkain — unang palatandaan ng kabaitan ng bunso.</p>
+      </article>
+      <article class="kard tauhan" data-uri="katulong">
+        <span class="tanda">Lingkod</span>
+        <h3>Mga manggagamot</h3>
+        <p>Nanggamot kay Haring Fernando ngunit nabigo. Sila ang nagsabing ang Ibong Adarna ang lunas sa sakit ng hari.</p>
+      </article>
+      <article class="kard tauhan" data-uri="hayop">
+        <span class="tanda">Hayop</span>
+        <h3>Agila</h3>
+        <p>Hari o pinuno sa mga hayop. Nakaaalam ng ruta sa Reyno de los Cristales. Sinakyan ni Juan. Ipinaliwanag ang kristal na lawa at ang paliguan ng mga prinsesa.</p>
+      </article>
+      <article class="kard tauhan" data-uri="hayop">
+        <span class="tanda">Hayop</span>
+        <h3>Lobo</h3>
+        <p>Tumulong kay Juan matapos iwan sa balon. Dinala sa tubig na panggamot, binuhusan, at gumaling ang prinsipe. Ugnay sa mahiwagang singsing ni Leonora.</p>
+      </article>
+      <article class="kard tauhan pula-gilid" data-uri="kaaway">
+        <span class="tanda pula">Kaaway</span>
+        <h3>Higante</h3>
+        <p>Dambuhalang nagbabantay kay Donya Juana. Pinatay ni Don Juan upang mailigtas ang prinsesa.</p>
+      </article>
+      <article class="kard tauhan pula-gilid" data-uri="kaaway">
+        <span class="tanda pula">Kaaway</span>
+        <h3>Serpyenteng may pitong ulo</h3>
+        <p>Nagbabantay kay Leonora. Kapag pinatulan ang isang ulo, maaaring tumubo muli. Pinatay din ni Don Juan.</p>
+      </article>
+      <article class="kard tauhan" data-uri="maharlika">
+        <span class="tanda">Kasama</span>
+        <h3>Dalawang di-nagngalang prinsesa</h3>
+        <p>Kasama ni Maria Blanca sa kristal na lawa. Nakita ni Juan ang tatlong prinsesa na nagsasampay-paligo.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Ibong Adarna · Buwan ng Wika · Pilipinas</div>
+      <small>Asul, dilaw, pula, at puti — kulay ng watawat.</small>
+    </div>
+  </footer>
+  <script src="../../js/adarna/nav.js"></script>
+  <script src="../../js/adarna/tauhan.js"></script>
+</body>
+</html>

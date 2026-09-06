@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagsusulit | Ibong Adarna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/adarna.css">
+</head>
+<body>
+  <div class="band" aria-hidden="true"><span></span><span></span><span></span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="tatak" href="index.html">
+        <img src="../../images/adarna.svg" alt="">
+        <span>
+          <strong>Ibong Adarna</strong>
+          <small>Buwan ng Wika</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="pangunahing-nav">Talaan</button>
+      <nav id="pangunahing-nav" aria-label="Pangunahing talaan">
+        <ul class="nav-list">
+          <li><a href="index.html">Unang Pahina</a></li>
+          <li><a href="tungkol.html">Tungkol</a></li>
+          <li><a href="kabanata.html">Mga Kabanata</a></li>
+          <li><a href="tauhan.html">Mga Tauhan</a></li>
+          <li><a href="lugar.html">Mga Lugar</a></li>
+          <li><a href="aral.html">Mga Aral</a></li>
+          <li><a href="pagsusulit.html" aria-current="page">Pagsusulit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="pahina-ulo">
+    <div class="pahina-ulo-inner">
+      <span class="kicker"><i class="eng">Quiz</i></span>
+      <h1>Pagsusulit sa Ibong Adarna</h1>
+      <p>Labinlimang tanong. Pumili ng isang sagot. May paliwanag pagkatapos ng bawat tanong.</p>
+    </div>
+  </header>
+
+  <main class="balot">
+    <p id="bilang-tanong" class="puntos">Tanong 1 sa 15</p>
+    <div class="pag-usad" aria-hidden="true"><span id="usad"></span></div>
+    <section class="tanong-kard">
+      <h2 id="tanong"></h2>
+      <div class="sagot" id="sagot"></div>
+      <div class="paliwanag" id="paliwanag"></div>
+      <p style="margin:1rem 0 0">
+        <button class="pindutan pangunahin" type="button" id="susunod" hidden>Susunod na tanong</button>
+      </p>
+      <div id="wakas" hidden>
+        <p class="puntos" id="puntos"></p>
+        <p>
+          <button class="pindutan pula" type="button" id="ulit">Ulitin ang pagsusulit</button>
+          <a class="pindutan pangunahin" href="tauhan.html">Bumalik sa mga tauhan</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Ibong Adarna · Buwan ng Wika · Pilipinas</div>
+      <small>Asul, dilaw, pula, at puti — kulay ng watawat.</small>
+    </div>
+  </footer>
+  <script src="../../js/adarna/nav.js"></script>
+  <script src="../../js/adarna/quiz.js"></script>
+</body>
+</html>
