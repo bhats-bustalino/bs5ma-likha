@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amado V. Hernandez - Pambansang Alagad ng Sining</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Cinzel:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/hernandez.css" />
+    <script src="../js/hernandez.js" defer></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="/css/bumalik.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Home Button -->
+    <a href="../index.html#projects" class="home-button">
+      <i class="fas fa-home"></i>
+      Bumalik sa Tahanan
+    </a>
+
+    <section class="hero-banner">
+      <div class="top-header-badge">
+        <img
+          src="../images/hernandez/Naps.png"
+          alt="Order of National Artists Logo"
+          class="naps-logo"
+        />
+        <div class="naps-title-box">
+          <span class="naps-title-main">The National Artist</span>
+          <span class="naps-title-sub">of the Philippines</span>
+        </div>
+      </div>
+
+      <div class="hero-container">
+        <div class="portrait-box">
+          <img
+            src="../images/hernandez/Him.png"
+            alt="Amado V. Hernandez Portrait"
+          />
+        </div>
+
+        <div class="quote-box">
+          <h1 class="quote-text">
+            Ang isip ng isang makata ay madalas maghimala&ndash;ang ilang
+            magagaspang na salita, kapag naunawaan ay nagiging bala at rosas.
+          </h1>
+
+          <a
+            href="#biography"
+            class="signature-link"
+            id="nameLink"
+            title="Pindutin para sa talambuhay"
+          >
+            Amado V. Hernandez
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section-wrapper" id="biography">
+        <div class="section-header">
+          <h2 class="section-title">Talambuhay</h2>
+          <div class="ph-divider">
+            <img
+              src="../images/hernandez/De.png"
+              alt="Philippine Flag Ribbon Divider"
+            />
+          </div>
+        </div>
+
+        <div class="bio-card">
+          <p>
+            Si <strong>Amado Vera Hernandez</strong> (Setyembre 13, 1903 – Marso
+            24, 1970), na mas kilala sa tawag na <em>Ka Amado</em>, ay isang
+            dakilang makata, nobelista, pinuno ng manggagawa, at mandirigma sa
+            kamay ng kaapihan. Siya ay iginawad bilang Pambansang Alagad ng
+            Sining sa Panitikan noong 1973 matapos ang kanyang pagpanaw bilang
+            pagkilala sa kanyang walang-kapantay na ambag sa panitikang
+            Filipino.
+          </p>
+          <p>
+            Lumalaki sa Tondo, Maynila, personal na nasaksihan ni Hernandez ang
+            pang-araw-araw na pakikibaka at hirap ng mga manggagawa—isang tema
+            na naging pundasyon ng kanyang mga akda. Noong Ikalawang Digmaang
+            Pandaigdig, sumapi siya sa kilusang gerilya bilang isang
+            intelligence officer laban sa mga Hapon, na lalong nagpatibay sa
+            kanyang pagmamahal sa bayan at paninindigan para sa kalayaan.
+          </p>
+          <p>
+            Bilang pangulo ng Congress of Labor Organizations (CLO), masigasig
+            niyang ipinaglaban ang karapatan ng mga manggagawa sa panahon ng
+            kaguluhan matapos ang digmaan. Dahil sa kanyang radikal na
+            adbokasiya, siya ay inakusahan at nakulong noong dekada '50. Sa loob
+            ng bilangguan, isinulat niya ang ilan sa pinakamakabuluhang akda sa
+            panitikang Tagalog, kabilang ang monumentol na nobelang
+            <em>Mga Ibong Mandaragit</em> at ang koleksyon ng tula na
+            <em>Isang Dipang Langit</em>, bago siya pormal na pinawalang-sala ng
+            Korte Suprema noong 1964.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-wrapper" id="works">
+        <div class="section-header">
+          <h2 class="section-title">Mga Koleksyon at Akda</h2>
+          <div class="ph-divider">
+            <img
+              src="../images/hernandez/De.png"
+              alt="Philippine Flag Ribbon Divider"
+            />
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="worksGrid"></div>
+      </section>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <img src="" alt="Book Cover" class="modal-img" id="modalImg" />
+        <div class="modal-text-container">
+          <h3 class="modal-title" id="modalTitle">Pamagat ng Akda</h3>
+          <div class="modal-meta" id="modalMeta">Kategorya | Taon</div>
+          <div class="modal-body" id="modalBody">
+            Detalyadong paglalarawan ng napiling akda.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-banner-container">
+      <img
+        src="../images/hernandez/De.png"
+        alt="Philippine Flag Ribbon"
+        class="footer-ribbon-img"
+      />
+    </div>
+  </body>
+</html>

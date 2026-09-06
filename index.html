@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="fil">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LIKHA 2026 | Buwan ng Wika Development Jam</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =========================================================
+         BACKGROUND DECORATIONS
+    ========================================================== -->
+
+    <div class="background-shape shape-red"></div>
+    <div class="background-shape shape-blue"></div>
+    <div class="background-shape shape-yellow"></div>
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="navbar" id="navbar">
+      <a href="#home" class="logo">
+        <div class="logo-symbol">3Y</div>
+
+        BS5MA
+      </a>
+
+      <!-- MOBILE MENU BUTTON -->
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Buksan ang menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"> Tahanan </a>
+
+        <a href="#video"> Presentasyon </a>
+
+        <a href="#projects"> Mga Pahina </a>
+
+        <a href="#about"> Tungkol sa LIKHA </a>
+
+        <a href="#projects" class="nav-button"> Tingnan ang mga Pahina </a>
+      </nav>
+    </header>
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+      <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+
+              Development Jam para sa Buwan ng Wika
+            </div>
+
+            <h1>
+              <span class="hero-red"> LIKHA </span>
+
+              <span class="hero-blue"> 2026 </span>
+            </h1>
+
+            <p class="hero-description">
+              Ito ang <i>website project</i> na nilikha ng BS5MA upang magbigay
+              impormasyon tungkol sa wikang Filipino at iba't-ibang mga
+              literatura na malaking parte ng ating kultura at pagkakakilanlan.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="primary-button">
+                Tuklasin ang mga Pahina
+                <span>→</span>
+              </a>
+
+              <a href="#video" class="secondary-button">
+                Manood ng Presentasyon
+              </a>
+            </div>
+          </div>
+
+          <!-- HERO ART -->
+
+          <div class="hero-art">
+            <div class="sun"></div>
+
+            <div class="art-card">
+              <h2>
+                FILIPINO.<br />
+                KULTURA.<br />
+                <i>CODE</i>.
+              </h2>
+
+              <p>Dito nagtatagpo ang kulturang Pilipino at teknolohiya.</p>
+
+              <div class="mini-line"></div>
+            </div>
+
+            <div class="floating-card one">🇵🇭 Wikang Filipino</div>
+
+            <div class="floating-card two">
+              &lt;/&gt; <i>Front-end Development</i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             VIDEO PRESENTATION
+        ====================================================== -->
+
+      <section class="video-section" id="video">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-label"> Tampok na Presentasyon </span>
+
+            <h2>
+              Unang
+              <span style="color: var(--red)"> LIKHA </span>
+              ng BS5MA
+            </h2>
+
+            <p>
+              Panoorin ang aming presentasyon upang malaman ang layunin,
+              proseso, at mga kuwentong nasa likod ng <i>web pages</i> na
+              nilikha ng aming klase.
+            </p>
+          </div>
+
+          <div class="video-wrapper reveal">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/shpyhyP16ZA?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+      <section class="projects-section" id="projects">
+        <div class="section-container">
+          <div class="section-header reveal">
+            <span class="section-label"> Ang Koleksiyon </span>
+
+            <h2>Mga ni<span style="color: var(--red)">LIKHA</span>ng Pahina</h2>
+
+            <p>
+              Tuklasin ang <i>web pages</i> na ginawa ng aming klase upang
+              magbigay impormasyon tungkol sa mga bagay na may kaugnay sa ating
+              literatura at wikang Filipino.
+            </p>
+          </div>
+
+          <!-- PROJECT GRID -->
+
+          <div class="projects-grid">
+            <!-- =================================================
+                         PROJECT 01
+            ================================================== -->
+
+            <article class="project-card reveal" data-category="game">
+              <div class="project-image">
+                <span class="project-number"> 01 </span>
+                <img
+                  src="images/quezon_page.png"
+                  alt="Screenshot ng proyekto"
+                />
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Manuel Quezon</h3>
+
+                <p>
+                  Tungkol sa abogado, sundalo, at politikong si Manuel Quezon,
+                  na kilala rin bilang "Ama ng Wikang Pambansa"
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names">
+                    Simoun De Leon at Angelito Broa
+                  </span>
+
+                  <a href="pages/quezon.html" class="visit-project">
+                    Bisitahin →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 02 -->
+
+            <article class="project-card reveal" data-category="web">
+              <div class="project-image">
+                <span class="project-number"> 02 </span>
+                <img
+                  src="images/lumbera_page.png"
+                  alt="Screenshot ng proyekto"
+                />
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Bienvenido Lumbera</h3>
+
+                <p>
+                  Tungkol sa makata, kritiko, at dramatista na si Bienvenido
+                  Lumbera
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names">
+                    Krishna Mae Seno at Lorraine Pepito
+                  </span>
+
+                  <a href="pages/lumbera.html" class="visit-project">
+                    Bisitahin →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 03 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 03 </span>
+                <img
+                  src="images/joaquin_page.png"
+                  alt="Screenshot ng proyekto"
+                />
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Nick Joaquin</h3>
+
+                <p>
+                  Tungkol sa manunulat at mamamahayag na si Nick Joaquin na
+                  kilala sa kanyang mga maikling kuwento at mga nobela
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names">
+                    Vanessa Alayon at Ishmael Flora
+                  </span>
+
+                  <a href="pages/joaquin.html" class="visit-project">
+                    Bisitahin →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 04 -->
+
+            <article class="project-card reveal" data-category="game">
+              <div class="project-image">
+                <span class="project-number"> 04 </span>
+                <img
+                  src="images/almario_page.png"
+                  alt="Screenshot ng proyekto"
+                />
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Virgilio Almario</h3>
+
+                <p>
+                  Tungkol sa manunulat, makata, kritiko, tagasalin, editor,
+                  guro, at tagapamahala ng kultura na si Virgilio Almario, na
+                  mas kilala bilang Rio Alma
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names">
+                    Justine Mangulabnan at Biner Olangco
+                  </span>
+
+                  <a href="pages/almario/almario.html" class="visit-project">
+                    Bisitahin →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 05 -->
+
+            <article class="project-card reveal" data-category="web">
+              <div class="project-image">
+                <span class="project-number"> 05 </span>
+                <img
+                  src="images/hernandez_page.png"
+                  alt="Screenshot ng proyekto"
+                />
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Amado Hernandez</h3>
+
+                <p>
+                  Tungkol sa manunulat, makata, isang pinuno ng mga manggagawa, at 1973 <i>National Artist for Literature</i>
+                  na si Amado Hernandez
+                  
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> Johannes Obed at Krisnel Pauig </span>
+
+                  <a href="pages/hernandez.html" class="visit-project">
+                    Bisitahin →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 06 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 06 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mitolohiyang Pilipino</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> Lyshan Dave Tomo at Renz May Arnuncio </span>
+
+                  <a href="pages/mitolohiya/mitolohiya.html" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 07 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 07 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 08 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 08 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 09 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 09 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 10 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 10 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 11 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 11 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 12 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 12 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 13 -->
+
+            <article class="project-card reveal" data-category="app">
+              <div class="project-image">
+                <span class="project-number"> 13 </span>
+
+                <div class="image-placeholder">
+                  <div class="image-placeholder-icon">🖼️</div>
+
+                  <span> Screenshot ng Proyekto </span>
+                </div>
+              </div>
+
+              <div class="project-content">
+                <h3>Mga Sawikain</h3>
+
+                <p>
+                  Matuto ng mga karaniwang ekspresyon, idyoma, at sawikain sa
+                  pamamagitan ng isang interaktibong karanasan.
+                </p>
+
+                <div class="project-meta">
+                  <span class="student-names"> BSCS 4A </span>
+
+                  <a href="#" class="visit-project"> Bisitahin → </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+      <section class="about-section" id="about">
+        <div class="section-container">
+          <div class="about-grid">
+            <div class="about-content reveal">
+              <span class="section-label"> Ano ang LIKHA? </span>
+
+              <h2>
+                Isang oportunidad upang magpakita ng
+                <span> kahusayan. </span>
+              </h2>
+
+              <p>
+                Ang LIKHA ay isang <i>Development Jam</i> para sa Buwan ng Wika,
+                na kung saan, ang mga mag-aaral ng <i>Computer Science</i> ay
+                binibigyan ng pagkakataon na gamitin ang kanilang kaalaman
+                habang ipinapaalala sa kanilang sarili ang kahalagahan ng Wikang
+                Filipino at ng ating kultura.
+              </p>
+
+              <div class="about-points">
+                <div class="about-point">
+                  <span class="check"> ✓ </span>
+
+                  Wika, literatura, at kulturang Pilipino ang sentro
+                </div>
+
+                <div class="about-point">
+                  <span class="check"> ✓ </span>
+
+                  Teknolohiya, bilang isang daan upang ipagdiwang ang sariling
+                  atin
+                </div>
+              </div>
+            </div>
+
+            <div class="about-visual reveal">
+              <div class="about-box">
+                <div class="about-box-inner">
+                  <div class="big-text">LIKHA</div>
+
+                  <span> Wikang Filipino × Teknolohiya </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+      <section class="cta-section">
+        <div class="cta-container reveal">
+          <h2>
+            Alamin o ipaalala sa iyong sarili kung gaano ka kulay ang ating
+            wika, literatura, at kultura.
+          </h2>
+          <a href="#projects" class="cta-button">
+            Tingnan ang Lahat ng mga Pahina →
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          LIKHA
+          <span>2026</span>
+        </div>
+
+        <div class="footer-text">
+          Nilikha para sa Buwan ng Wika <i>Development Jam</i>
+          <br />
+          Ng <i>Junior Philippine Computer Society - AICS Chapter</i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

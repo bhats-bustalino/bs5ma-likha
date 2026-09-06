@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido Lumbera — Pambansang Alagad ng Sining</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/bumalik.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0038a8;
+            --primary-red: #ce1126;
+            --sun-yellow: #fcd116;
+            --dark-blue: #0a1128;
+            --card-bg: rgba(255, 255, 255, 0.92);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* 🎨 SUPER COLORFUL BACKGROUND — patriotic & vibrant */
+        body {
+            background: linear-gradient(
+                135deg,
+                #ff0000 0%,
+                #ff4d4d 15%,
+                #ffcc00 30%,
+                #0066cc 50%,
+                #003399 70%,
+                #9900cc 90%,
+                #ff0055 100%
+            );
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #2b2b2b;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* === STICKY NAVIGATION BAR === */
+        .top-nav {
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            background: rgba(10, 17, 40, 0.85);
+            padding: 10px 20px;
+            border-radius: 40px;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--sun-yellow);
+            box-shadow: 0 0 25px rgba(252, 209, 22, 0.5), 0 8px 20px rgba(0,0,0,0.3);
+            display: flex;
+            gap: 15px;
+        }
+
+        .top-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .top-nav a:hover {
+            background: linear-gradient(135deg, var(--sun-yellow), #ff9900);
+            color: var(--dark-blue);
+            box-shadow: 0 0 15px rgba(252, 209, 22, 0.6);
+        }
+
+        /* === PAGE SECTIONS === */
+        .page {
+            height: 100vh;
+            width: 100vw;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px 30px;
+            position: relative;
+        }
+
+        /* === MAIN CONTAINER === */
+        .container {
+            max-width: 880px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), 
+                url('/images/lumbera.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 
+                0 0 30px rgba(252, 209, 22, 0.4),
+                0 0 60px rgba(0, 56, 168, 0.3),
+                0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 5px solid var(--sun-yellow);
+            position: relative;
+        }
+
+        .container::-webkit-scrollbar {
+            width: 6px;
+        }
+        .container::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--primary-red), var(--primary-blue));
+            border-radius: 10px;
+        }
+
+        /* === PROFILE HEADER === */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--sun-yellow);
+            box-shadow: 0 0 20px rgba(252, 209, 22, 0.5), 0 8px 20px rgba(0,0,0,0.2);
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 2.2em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(252, 209, 22, 0.3);
+        }
+
+        .subtitle {
+            color: var(--primary-red);
+            font-weight: 700;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+        }
+
+        /* === HEADINGS === */
+        h2 {
+            color: var(--primary-red);
+            font-size: 1.5em;
+            margin: 20px 0 15px;
+            border-left: 5px solid var(--sun-yellow);
+            padding-left: 12px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.7;
+            text-align: justify;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        /* === GRID CARDS === */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .work-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,245,255,0.9));
+            backdrop-filter: blur(4px);
+            padding: 18px;
+            border-radius: 12px;
+            border-top: 4px solid var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(0, 56, 168, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--primary-red);
+            box-shadow: 0 8px 25px rgba(206, 17, 38, 0.2);
+            background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,245,245,0.95));
+        }
+
+        .work-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.1em;
+            margin-bottom: 6px;
+        }
+
+        .work-card p {
+            font-size: 0.95em;
+            margin: 0;
+        }
+
+        /* === QUOTE BOX === */
+        blockquote {
+            background: linear-gradient(135deg, #fff9c4, #fff3e0);
+            border-left: 5px solid var(--sun-yellow);
+            padding: 20px;
+            border-radius: 12px;
+            font-style: italic;
+            font-size: 1.15em;
+            color: #111;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(252, 209, 22, 0.2);
+        }
+
+        /* === BUTTONS === */
+        .nav-buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
+            color: white;
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(206, 17, 38, 0.4), 0 6px 20px rgba(0, 56, 168, 0.3);
+        }
+
+        .page-number {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px dashed rgba(0, 0, 0, 0.2);
+            color: #444;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 25px; }
+            h1 { font-size: 1.7em; }
+            .top-nav { width: 90%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home Button -->
+    <a href="../index.html#projects" class="home-button">
+        <i class="fas fa-home"></i>
+        Bumalik sa Tahanan
+    </a>
+
+    <!-- Floating Top Navigation -->
+    <nav class="top-nav">
+        <a href="#page1">Pahina 1</a>
+        <a href="#page2">Pahina 2</a>
+        <a href="#page3">Pahina 3</a>
+    </nav>
+
+    <!-- ================================================= -->
+    <!-- 📄 PAGE 1 — TALAMBUHAY AT PAGKILALA              -->
+    <!-- ================================================= -->
+    <section class="page" id="page1">
+        <div class="container">
+            <div class="profile-header">
+                <img src="/images/lumbera.jpg" alt="Bienvenido Lumbera" class="profile-img">
+                <h1>Bienvenido Lumbera</h1>
+                <p class="subtitle">Pambansang Alagad ng Sining sa Panitikan</p>
+            </div>
+
+            <h2><i class="fas fa-user-circle"></i> Sino si Bienvenido Lumbera?</h2>
+            <p>Si <strong>Bienvenido Lumbera</strong> ay isang tanyag na makata, manunulat, kritiko, at guro sa Pilipinas. Ipinanganak siya noong <strong>Abril 11, 1932</strong> sa Lipa, Batangas. Mula sa pagkabata, naipakita na niya ang pagmamahal sa pagbabasa at pagsusulat na naging daan upang mahubog ang kanyang galing sa panitikan.</p>
+            <p>Kinilala siya bilang <em>National Artist for Literature</em> noong 2006, ang pinakamataas na parangal na maibibigay sa isang alagad ng sining sa bansa. Pumanaw siya noong Setyembre 28, 2021, ngunit nananatiling buhay ang kanyang pamana sa panitikan at kultura ng Pilipinas.</p>
+
+            <div class="nav-buttons">
+                <a href="#page2" class="nav-btn"> →</a>
+            </div>
+
+            <div class="page-number"></div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!-- 📄 PAGE 2 — MGA AKDA AT GAWAIN                    -->
+    <!-- ================================================= -->
+    <section class="page" id="page2">
+        <div class="container">
+            <h2><i class="fas fa-book-open"></i> Mga Kilalang Akda at Gawaing Pampanitikan</h2>
+            <p>Si Lumbera ay nag-iwan ng napakaraming mahahalagang akda na hanggang ngayon ay pinag-aaralan at hinahangaan ng marami. Narito ang ilan sa kanyang pinakatanyag na gawa:</p>
+
+            <div class="works-grid">
+                <div class="work-card">
+                    <h3>LikharArian</h3>
+                    <p>Koleksyon ng mga tula at sanaysay na nagpapakita ng kanyang pagpapahalaga sa pambansang identidad.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Balaybay</h3>
+                    <p>Koleksyon ng mga tula (1980-2008) na tumatalakay sa buhay, lipunan, at kultura ng Pilipino.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Rama Hari & Tales of the Manuvu</h3>
+                    <p>Mga tanyag na libretto para sa musikang dula na nagbigay ng bagong anyo sa sining ng pagtatanghal.</p>
+                </div>
+                <div class="work-card">
+                    <h3>Noli & El Fili Musikal</h3>
+                    <p>Mga isinulat na libretto para sa dula at musikal batay sa mga dakilang nobela ni Rizal.</p>
+                </div>
+            </div>
+
+            <p>Ang kanyang mga gawa ay hindi lamang para sa aliw, ito ay nagsisilbing salamin ng ating lipunan, kasaysayan, at kultura upang gisingin ang kamalayan ng bawat Pilipino.</p>
+
+            <div class="nav-buttons">
+                <a href="#page1" class="nav-btn">← </a>
+                <a href="#page3" class="nav-btn"> →</a>
+            </div>
+
+            <div class="page-number"></div>
+        </div>
+    </section>
+
+    <!-- ================================================= -->
+    <!-- 📄 PAGE 3 — KONTRIBUSYON AT MENSAHE              -->
+    <!-- ================================================= -->
+    <section class="page" id="page3">
+        <div class="container">
+            <h2><i class="fas fa-hands-helping"></i> Kontribusyon at Kahalagahan sa Lipunan</h2>
+            <p>Itinaguyod ni Lumbera ang wikang Filipino bilang wika ng sining at panitikan. Naniniwala siyang ang ating sariling wika ang pinakamabisang kasangkapan sa pagpapahayag ng ating damdamin at kaisipan. Ang kanyang mga akda ay puno ng pagmamahal sa bayan at pagmumulat sa lipunan.</p>
+
+            <blockquote>
+                "Ang panitikan ay salamin ng ating kaluluwa at kasaysayan bilang isang bansa."
+            </blockquote>
+
+            <p>Ang buhay at gawa ni Bienvenido Lumbera ay paalala na ang panitikan ay hindi lamang pagsulat ito ay pagmamahal sa bayan, pagpapahalaga sa sariling wika, at pagpapasa ng katotohanan sa susunod na henerasyon.</p>
+
+            <div class="nav-buttons">
+                <a href="#page2" class="nav-btn">←</a>
+            </div>
+
+            <footer>
+                <p><strong>Proyekto para sa LIKHA</strong> </p>
+                <p style="margin-top: 4px; color: #555;"></p>
+            </footer>
+
+            <div class="page-number"></div>
+        </div>
+    </section>
+
+</body>
+</html>
